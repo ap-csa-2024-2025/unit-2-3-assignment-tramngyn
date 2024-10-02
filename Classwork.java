@@ -3,6 +3,8 @@ public class Classwork
   public static void main(String[] args)
   {
     System.out.println(firstLastN("dictionary", 3));
+    System.out.println();
+    System.out.println(delEnd("library", 5));
   }
 
   public static String firstLastN(String word, int n)
@@ -17,4 +19,11 @@ public class Classwork
     return output;
   }
 
+  public static String delEnd(String word, int n)
+  {
+    int lastN = word.length() - n;
+    String end = word.substring(0, lastN);
+
+    return end;
+  }
 }
